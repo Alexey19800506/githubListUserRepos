@@ -1,5 +1,5 @@
-export const fetchUserData = USERNAME => {
-    return fetch(`https://api.github.com/users/${USERNAME}`)
+export const fetchUserData = username => {
+    return fetch(`https://api.github.com/users/${username}`)
         .then(response => {
             if (response.ok) {
                 return response.json();
